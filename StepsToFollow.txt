@@ -1,0 +1,7 @@
+django-admin startproject GamePlanR .
+python .\manage.py startapp Account 
+
+
+
+python .\manage.py makemigrations
+python .\manage.py migrate
