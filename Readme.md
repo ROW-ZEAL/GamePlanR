@@ -8,8 +8,6 @@ Welcome to GamePlanR! This application is designed for sports enthusiasts who ar
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
