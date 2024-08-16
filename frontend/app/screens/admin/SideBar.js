@@ -6,7 +6,7 @@ import {
   DrawerItemList,
 } from "@react-navigation/drawer";
 import { useNavigation } from "@react-navigation/native";
-import { removeToken } from "../../services/AsyncStorageService";
+import { removeToken } from "../../../services/AsyncStorageService";
 import { useSelector } from "react-redux";
 
 const SideBar = ({ ...props }) => {
@@ -14,7 +14,7 @@ const SideBar = ({ ...props }) => {
   const myAccessToken = useSelector((state) => state.auth);
   const handleLogout = async () => {
     await removeToken();
-    navigation.navigate("Home");
+    navigation.navigate("AdminLogin");
     console.log("Logout");
   };
   const navigation = useNavigation();

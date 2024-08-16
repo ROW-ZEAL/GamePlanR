@@ -10,6 +10,8 @@ import AdminLogin from "./app/screens/admin/AdminLogin";
 import AdminDashboard from "./app/screens/admin/AdminDashboard";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
+import HomeScreen from "./app/screens/admin/Pages/HomeScreen";
+import AddVenue from "./app/screens/admin/Pages/AddVenue";
 
 const Stack = createNativeStackNavigator();
 function App() {
@@ -64,6 +66,18 @@ function App() {
           name="AdminDashboard"
           component={AdminDashboard}
           options={{ title: "Admin Dashboard", headerBackVisible: false }}
+        />
+
+        <Stack.Screen
+          name="AdminHome"
+          component={HomeScreen}
+          options={{ title: "Admin Home", headerBackVisible: false }}
+        />
+
+        <Stack.Screen
+          name="AddVenue"
+          component={AddVenue}
+          options={{ title: "AddVenue", headerBackVisible: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
